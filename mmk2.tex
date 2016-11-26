@@ -23,7 +23,7 @@
 \usepackage{booktabs}			% bessere Tabellenlinien
 \usepackage{graphicx}			% Zum Bilder einfügen benötigt
 \usepackage{pbox}				% Intelligent parbox: \pbox{maximum width}{blabalbalb \\ blabal}
-\usepackage{../../packages/scientific}	% Eigenes Paket
+\usepackage{scientific}	% Eigenes Paket
 \usepackage{parskip}
 \usepackage{scrtime}
 \usepackage{titlesec}
@@ -83,7 +83,7 @@
 \vspace{-3mm}
 \begin{multicols}{4}
 	\parbox{2.3cm}{
-		\includegraphics[height=1.4cm]{../img/Logo.pdf}		
+		\includegraphics[height=1.4cm]{./img/Logo.pdf}		
 	}
 	\parbox{4cm}{
 		\emph{\Large{Mensch-Maschine-Kommunikation 2}}
@@ -361,7 +361,7 @@ $G(z_1,z_2) = \sum \limits_{n_1 = - \infty}^{\infty} \sum \limits_{n_2 = - \inft
 
 \subsubsection{Filterstukturen}
 	$H(z) = \frac{Y(z)}{X(z)} = \frac{b_0+b_1z^{-1}+...+b_mz^{-m}}{1+a_1z^{-1}+...+a_mz^{-m}}$\\
-	\includegraphics[width=6.9cm]{../img/Filterstruktur.png}
+	\includegraphics[width=6.9cm]{./img/Filterstruktur.png}
 
 }
 
@@ -425,7 +425,7 @@ $G(z_1,z_2) = \sum \limits_{n_1 = - \infty}^{\infty} \sum \limits_{n_2 = - \inft
 	\textcolor{red}{\emph{akt. Pixel}} ist \textcolor{red}{rot} und \emph{fett}
 	}
 	\parbox{1cm}{
-	\includegraphics[width=1cm]{../img/n1n2_System.png}
+	\includegraphics[width=1cm]{./img/n1n2_System.png}
 	}
 
 	\subsubsection{Gradientenfilter in $n_1$-Richtung}
@@ -453,7 +453,7 @@ $G(z_1,z_2) = \sum \limits_{n_1 = - \infty}^{\infty} \sum \limits_{n_2 = - \inft
 	$\mat{0 & -1 & 0 \\ -1 & \textcolor{red}{\emph{4}} & -1 \\ 0 & -1 & 0 }$ 
 	$\mat{-1 & -1 & -1 \\ -1 & \textcolor{red}{\emph{8}} & -1 \\ -1 & -1 & -1 }$ 
 	$\mat{1 & -2 & 1 \\ -2 & \textcolor{red}{\emph{4}} & -2 \\ 1 & -2 & 1 }$ 
-	%\includegraphics[height=1.4cm]{../img/laplaceFilter.png}
+	%\includegraphics[height=1.4cm]{./img/laplaceFilter.png}
 	\subsubsection{Binarisierung}
 	weitere Herausarbeitung der Kanten z.B für anschließende Segmentierung oder Skelettierung\\
 	$b_{Bin}[n_1,n_2] = \begin{cases}
